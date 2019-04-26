@@ -112,7 +112,11 @@ a {
   text-shadow: 1px 1px 10px rgb(60, 60, 60);
 {
 
-
+  .clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+  {
 
 
 
