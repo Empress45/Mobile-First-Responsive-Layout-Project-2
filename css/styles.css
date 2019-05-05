@@ -59,7 +59,7 @@ h2 {
   text-shadow: 1px 1px 7px rgb(60, 60, 60);
 }
 
-.col, {
+.col {
   padding-top: 1em;
   margin: 45px auto;
   width: 90%;
@@ -78,8 +78,9 @@ h3 {
   text-shadow: 1px 1px 1px rgb(60, 60, 60);
 }
 
- p, nav clearfix {
+p, nav clearfix {
 text-align: center;
+margin: auto;
 color: rgb(60, 60, 60);
 font-size: 25px;
 letter-spacing: .05em;
@@ -146,4 +147,3 @@ a:hover {
     float: right;
     margin-left: 5px;
   }
-  
