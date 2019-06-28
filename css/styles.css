@@ -78,7 +78,7 @@ h3 {
   text-shadow: 1px 1px 1px rgb(60, 60, 60);
 }
 
-p, nav clearfix {
+nav clearfix {
 text-align: center;
 margin: auto;
 color: rgb(60, 60, 60);
@@ -88,6 +88,21 @@ line-height: 1.2em;
 padding: 2em 0;
 width: 80%;
 text-shadow: 1px 1px 5px rgb(60, 60, 60);
+
+}
+
+p {
+  text-align: center;
+  margin: auto;
+  color: rgb(60, 60, 60);
+  font-size: 25px;
+  letter-spacing: .05em;
+  line-height: 1.2em;
+  padding: 2em 0;
+  width: 80%;
+  text-shadow: 1px 1px 5px rgb(60, 60, 60);
+  display: flex;
+
 }
 
 .nav-group a:hover {
