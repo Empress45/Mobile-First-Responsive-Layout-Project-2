@@ -16,6 +16,7 @@ body {
 
 .all-content {
     margin: auto;
+    padding-right: 10px;
 }
 
 .main-header {
@@ -31,6 +32,16 @@ body {
  text-shadow: 1px 1px 10px rgb(60, 60, 60);
 }
 
+.first-pg {
+  width: 80%;
+  text-align: center;
+  padding: 1.4rem 1.4rem 3rem;
+  margin: auto;
+  line-height: 1.4;
+  font-weight: 100;
+  font-size: 0.8rem;
+}
+
 a {
 color: rgb(116, 125, 120);
 text-decoration: none;
@@ -43,11 +54,8 @@ text-shadow: 1px 1px 5px rgb(60, 60, 60);
 }
 
 .profile-img {
-text-align: center;
-padding-top: 2em;
-padding-bottom: 1em;
-margin-right: 30px;
-max-width: 370px;
+margin-right: 20px;
+width: 35%;
 }
 
 h2 {
@@ -59,12 +67,21 @@ h2 {
   text-shadow: 1px 1px 7px rgb(60, 60, 60);
 }
 
+.main-content {
+  margin: 0 auto;
+  max-width: 1100px;
+  font-family: Noto Sans;
+  padding-bottom: 20px;
+}
+
 .col {
-  padding-top: 1em;
-  margin: 45px auto;
-  width: 90%;
-  max-width: 450px;
-  height: auto;
+display: block;
+margin: 20px 10px;
+height: 250;
+color: white;
+text-align: center;
+letter-spacing: 1px;
+padding-top: 5px;
 }
 
 .col, img {
@@ -88,7 +105,6 @@ line-height: 1.2em;
 padding: 2em 0;
 width: 80%;
 text-shadow: 1px 1px 5px rgb(60, 60, 60);
-
 }
 
 p {
@@ -101,8 +117,6 @@ p {
   padding: 2em 0;
   width: 80%;
   text-shadow: 1px 1px 5px rgb(60, 60, 60);
-  display: flex;
-
 }
 
 .nav-group a:hover {
@@ -121,6 +135,7 @@ ul, li {
 
 .contact-info, p {
   padding-top: .05em;
+  padding-bottom: 1.5em;
 }
 
 .footer-name {
@@ -131,6 +146,8 @@ ul, li {
   font-size: 25px;
   font-weight: 600;
   text-shadow: 1px 1px rgb(60, 60, 60);
+  float: left;
+  display: inline-block;
 }
 
 .top {
@@ -139,9 +156,22 @@ ul, li {
   justify-content: space-between;
 }
 
+.footer-nav {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-nav > li {
+  display: none;
+}
+
 
 a:hover {
-  color:  rgb(181, 179, 190);
+  text-decoration: none;
+  color:  rgb(255, 0, 0);
 }
 
   .clearfix::after {
@@ -153,12 +183,16 @@ a:hover {
 
 /*==== Media Queries ====*/
 @media  (min-width: 768px)  {
-  .name, nav-group,
-  li {
+  .body {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .footer-name {
     display: inline-block;
+    float: left;
   }
-
-  .profile-img {
+  .top {
+    display: inline-block;
     float: right;
-    margin-left: 5px;
   }
+}
