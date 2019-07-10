@@ -7,192 +7,302 @@ Base styles
 }
 
 body {
-  margin: 0;
-  padding: 10px;
-  text-align: center;
-  color: #4c9ed9;
-  background-color: rgb(223, 177, 231);
+   background-color: rgb(223, 177, 231);
+   color: #4c9ed9;
+   text-align: center;
+   font-family: Helvetica, Arial, sans-serif;
+   line-height: 1.6;
 }
 
-.all-content {
-    margin: auto;
-    padding-right: 10px;
-}
-
-.main-header {
-  text-transform: uppercase;
-  margin-bottom: 0;
-}
-
-.name {
- text-align: center;
- color: grey;
- font-family: bold;
- font-size: 25px;
- text-shadow: 1px 1px 10px rgb(60, 60, 60);
-}
-
-.first-pg {
-  width: 80%;
-  text-align: center;
-  padding: 1.4rem 1.4rem 3rem;
-  margin: auto;
-  line-height: 1.4;
-  font-weight: 100;
-  font-size: 0.8rem;
-}
-
+h2,
+h3,
+h4,
+h5,
 a {
-color: rgb(116, 125, 120);
-text-decoration: none;
-text-transform: capitalize;
-font-size: 25px;
-font-weight: 500;
-display: inline;
-width: 100%;
-text-shadow: 1px 1px 5px rgb(60, 60, 60);
-}
-
-.profile-img {
-margin-right: 20px;
-width: 35%;
-}
-
-h2 {
-  text-transform: uppercase;
-  color: rgb(69, 69, 71);
-  font-size: 25px;
-  padding-top: 2em;
-  padding-bottom: 1em;
-  text-shadow: 1px 1px 7px rgb(60, 60, 60);
-}
-
-.main-content {
-  margin: 0 auto;
-  max-width: 1100px;
-  font-family: Noto Sans;
-  padding-bottom: 20px;
-}
-
-.col {
-display: block;
-margin: 20px 10px;
-height: 250;
-color: white;
-text-align: center;
-letter-spacing: 1px;
-padding-top: 5px;
-}
-
-.col, img {
-  max-width: 100%;
+  font-size: 1.8em;
+   color:  #2a2e30;
 }
 
 h3 {
-  font-size: 2.5em;
-  color: grey;
-  font-family: 'nunito sans';
-  text-shadow: 1px 1px 1px rgb(60, 60, 60);
-}
-
-nav clearfix {
-text-align: center;
-margin: auto;
-color: rgb(60, 60, 60);
-font-size: 25px;
-letter-spacing: .05em;
-line-height: 1.2em;
-padding: 2em 0;
-width: 80%;
 text-shadow: 1px 1px 5px rgb(60, 60, 60);
 }
 
+a {
+   text-decoration: none;
+}
+
+.profile-img {
+   max-width: 100%;
+}
+
 p {
-  text-align: center;
-  margin: auto;
-  color: rgb(60, 60, 60);
-  font-size: 25px;
+  font-size: 20px;
   letter-spacing: .05em;
-  line-height: 1.2em;
-  padding: 2em 0;
-  width: 80%;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 1em;
+  margin-bottom: 1.6em;
+  color:  #2a2e30;
   text-shadow: 1px 1px 5px rgb(60, 60, 60);
 }
 
-.nav-group a:hover {
-   color: rgb(181, 179, 190);
+/* ===============
+   Navigation Style
+================ */
+.name  {
+  font-size: 2.1em;
+  margin: 0;
+  color: #202426;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-shadow: 1px 1px 10px rgb(60, 60, 60);
 }
 
-ul, li {
-  display: block;
-  color: grey;
-  font-size:  1.125em;
-  font-weight: 100;
+.nav-group {
+  margin-top: 6px;
+}
+
+li, a {
+  list-style-type: none;
+}
+
+.name a,
+.nav-group a {
   text-align: center;
-  padding: .4em;
-  text-decoration: none;
+  display: block;
+  padding: 10px 15px;
 }
 
-.contact-info, p {
-  padding-top: .05em;
-  padding-bottom: 1.5em;
+.nav-group a {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #5d686f;
+  text-transform: uppercase;
+  margin-top: 8px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-shadow: 1px 1px 10px rgb(60, 60, 60);
+}
+
+.nav-group  a:hover {
+   color: #03070a;
+   list-style-type: none;
+}
+
+/*=============
+Layout For Footer
+==============*/
+.main-footer {
+   background-color: #a6c5ee ;
 }
 
 .footer-name {
-  text-transform: uppercase;
-  text-align: center;
-  color: grey;
-  font-family: bold;
-  font-size: 25px;
-  font-weight: 600;
-  text-shadow: 1px 1px rgb(60, 60, 60);
-  float: left;
+  font-size: 1.3em;
   display: inline-block;
+  float: left;
+  color:  #202426;
+
 }
 
 .top {
-  font-size: 20px;
-  text-transform: uppercase;
-  justify-content: space-between;
+  display: inline-block;
+  float: right;
 }
 
-.footer-nav {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
+.main-footer {
+  margin: 0px 20px 0px 20px;
+  border: 1px solid #9594d7;
+  border-top: 1px solid grey;
 }
-
-.footer-nav > li {
-  display: none;
-}
-
 
 a:hover {
   text-decoration: none;
-  color:  rgb(255, 0, 0);
+  color: purple;
 }
 
-  .clearfix::after {
-    content: " ";
-    clear: both;
-    display: table;
+.footer-nav {
+  display: none;
+}
+
+/*================
+               ClearFix
+=================*/
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 
-/*==== Media Queries ====*/
-@media  (min-width: 768px)  {
-  .body {
+
+/*=================
+Container layout
+==================*/
+
+.col {
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+/*================
+Page Elements
+=================*/
+
+
+.profile-img {
+  width: 60%;
+  margin-top: 60px;
+}
+
+.nav-clearfix {
+  padding: 10px 10px;
+}
+
+h2, portfolio {
+  padding: 5px 5px;
+  margin: 5px 5px;
+}
+
+.name-title {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.contact {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+
+/*===============
+Class Selectors
+================*/
+
+.main-header,
+.nav-clearfix,
+.contact {
+  background-color:  #d9dde2;
+}
+
+.contact-phone,
+.contact-email {
+  margin-bottom: 0;
+}
+
+.contact-email {
+  margin-top: 0;
+}
+
+
+/*===============
+Media Queries
+================*/
+
+@media (min-width: 768px) {
+
+  body {
     width: 95%;
     margin: 0 auto;
   }
-  .footer-name {
-    display: inline-block;
-    float: left;
-  }
-  .top {
-    display: inline-block;
-    float: right;
-  }
+}
+
+/*-----------Header-----------*/
+
+.name {
+  font-size: 1.6em;
+  margin: 0;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.nav-group {
+  display: block;
+  margin: 0px;
+  padding-top: 15px;
+}
+
+.nav-group li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.nav-group a {
+  font-size: 1em;
+  font-weight: normal;
+  color: #2a2e30;
+  text-transform: uppercase;
+  padding: 0px;
+  margin-top: 0px;
+}
+
+/*-------------Nav Clearfix------------*/
+
+.nav-clearfix {
+  display: inline-block;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.profile-img {
+  float: right;
+  width: 40%;
+  margin-top: 0px;
+  padding: 20px 20px;
+}
+
+.first-pg {
+  font-size: 1.2em;
+  float: left;
+  width: 60%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 20px 10px;
+  text-align: justify;
+}
+
+/*---------------Portfolio--------------*/
+
+h2, portfolio {
+  display: inline-block;
+  padding: 10px 10px;
+}
+
+.col {
+  float: left;
+}
+
+.one,
+.two,
+.three,
+.four,
+.five,
+.six {
+  width: 50%;
+}
+
+
+/*-----------Footer-----------*/
+
+
+.top {
+  display: none;
+}
+
+.name {
+  display: inline-block;
+}
+
+.footer-nav {
+  font-size: 0.7em;
+  display: inline-block;
+  margin: 5px;
+  float: right;
+}
+
+.footer-nav li {
+  display: inline;
+  float: left;
+  margin-left: 15px;
+  padding-bottom: 21px;
 }
