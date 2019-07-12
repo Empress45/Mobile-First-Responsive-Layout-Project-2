@@ -31,7 +31,7 @@ a {
    text-decoration: none;
 }
 
-.profile-img {
+ img {
    max-width: 100%;
 }
 
@@ -43,7 +43,7 @@ p {
   padding-bottom: 1em;
   margin-bottom: 1.6em;
   color:  #2a2e30;
-  text-shadow: 1px 1px 5px rgb(60, 60, 60);
+  text-shadow: 2px 3px 5px rgb(60, 60, 60);
 }
 
 /* ===============
@@ -100,8 +100,8 @@ Layout For Footer
   font-size: 1.3em;
   display: inline-block;
   float: left;
+  text-shadow: 1px 1px 5px rgb(60, 60, 60);
   color:  #202426;
-
 }
 
 .top {
@@ -137,7 +137,7 @@ a:hover {
 
 
 /*=================
-Container layout
+          Container layout
 ==================*/
 
 .col {
@@ -146,7 +146,7 @@ Container layout
 }
 
 /*================
-Page Elements
+          Page Elements
 =================*/
 
 
@@ -167,6 +167,7 @@ h2, portfolio {
 .name-title {
   margin-top: 60px;
   margin-bottom: 60px;
+  background: rgb(233, 177, 228);
 }
 
 .contact {
@@ -176,13 +177,17 @@ h2, portfolio {
 
 
 /*===============
-Class Selectors
+         Class Selectors
 ================*/
 
 .main-header,
 .nav-clearfix,
 .contact {
-  background-color:  #d9dde2;
+background: rgb(233, 177, 228);
+}
+
+.contact, h2 {
+  background: rgb(233, 177, 228);
 }
 
 .contact-phone,
@@ -196,7 +201,7 @@ Class Selectors
 
 
 /*===============
-Media Queries
+           Media Queries
 ================*/
 
 @media (min-width: 768px) {
@@ -205,7 +210,6 @@ Media Queries
     width: 95%;
     margin: 0 auto;
   }
-}
 
 /*-----------Header-----------*/
 
@@ -266,6 +270,7 @@ Media Queries
 h2, portfolio {
   display: inline-block;
   padding: 10px 10px;
+  text-shadow: 1px 1px 5px rgb(60, 60, 60);
 }
 
 .col {
@@ -305,4 +310,133 @@ h2, portfolio {
   float: left;
   margin-left: 15px;
   padding-bottom: 21px;
+  text-shadow: 1px 1px 5px rgb(60, 60, 60);
+}
+
+/*---------Float Clearfix----------*/
+
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
+   }
+}
+
+
+
+@media (min-width: 1024px) {
+
+  body {
+    width: 80%;
+    max-width: 1150px;
+  }
+}
+
+/*-----------Header---------*/
+
+.name {
+  font-size: 1.5em;
+  margin: 0px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  display: inline-block;
+  float: left;
+}
+
+.nav-group {
+  font-size: 1.2em;
+  display: block;
+  padding-top: 0px;
+  padding-bottom: 50px;
+}
+
+.nav-group li {
+  display: inline-block;
+  margin-left: 10px;
+  float: right;
+}
+
+.nav-group a {
+  font-size: 1em;
+  font-weight: normal;
+  text-transform: uppercase;
+  padding-top: .03em;
+}
+
+
+/*---------Nav Clearfix---------*/
+
+.nav-clearfix {
+  display: inline-block;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.profile-img {
+  float: right;
+  width: 40%;
+  margin-top: 0px;
+  padding: 20px 20px;
+}
+
+.firstpg {
+  font-size: 1.2em;
+  float: right;
+  width: 60%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 20px 10px;
+  text-align: justify;
+}
+
+/*------------Portfolio----------*/
+
+h2, portfolio {
+  display: inline-block;
+  padding: 10px 10px;
+}
+
+.col {
+  float: left;
+}
+
+.one,
+.two,
+.three,
+.four,
+.five,
+.six {
+  width: 33%;
+}
+
+/*------------Footer---------*/
+
+.top {
+  display: none;
+}
+
+.name {
+  display: inline-block;
+  float: left;
+}
+
+.footer-nav {
+  display: inline-block;
+  float: right;
+}
+
+.footer-nav li {
+  display: inline;
+  float: left;
+  margin-left: 15px;
+  padding-top: 21px;
+  padding-bottom: 21px;
+}
+
+/*---------Float Clearfix-------*/
+
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
 }
