@@ -47,7 +47,7 @@ p {
 }
 
 /* ===============
-   Navigation Style
+       Navigation Style
 ================ */
 .name  {
   font-size: 2.1em;
@@ -90,7 +90,7 @@ li, a {
 }
 
 /*=============
-Layout For Footer
+    Layout For Footer
 ==============*/
 .main-footer {
    background-color: #a6c5ee ;
@@ -169,6 +169,26 @@ h2, portfolio {
   margin-bottom: 60px;
   background: rgb(233, 177, 228);
 }
+
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,  img {
+  transition: transform .5s;
+  border-radius: 5px;
+}
+
+.one,
+.two,
+.three,
+.four,
+.five,
+.six, img:hover {
+  transform:  scale(1.0) rotate(360deg);
+}
+
 
 .contact {
   padding-top: 60px;
@@ -267,7 +287,7 @@ background: rgb(233, 177, 228);
 
 /*---------------Portfolio--------------*/
 
-h2, portfolio {
+h2, #portfolio {
   display: inline-block;
   padding: 10px 10px;
   text-shadow: 1px 1px 5px rgb(60, 60, 60);
@@ -330,7 +350,6 @@ h2, portfolio {
     width: 80%;
     max-width: 1150px;
   }
-}
 
 /*-----------Header---------*/
 
@@ -391,7 +410,7 @@ h2, portfolio {
 
 /*------------Portfolio----------*/
 
-h2, portfolio {
+h2, #portfolio {
   display: inline-block;
   padding: 10px 10px;
 }
@@ -429,8 +448,9 @@ h2, portfolio {
   display: inline;
   float: left;
   margin-left: 15px;
-  padding-top: 21px;
-  padding-bottom: 21px;
+  padding-top: 0px;
+  padding-bottom: 15px;
+  }
 }
 
 /*---------Float Clearfix-------*/
